@@ -1,28 +1,28 @@
 <script setup>
 import { onBeforeMount } from 'vue'
+import { useGamesStore } from '@/stores/games'
 import { RouterView } from 'vue-router'
 import Nav from './components/Nav.vue'
 import Footer from './components/Footer.vue'
-import { useGamesStore } from '@/stores/games'
 
 const store = useGamesStore();
 
 onBeforeMount( () => {
-  store.loadGames();
-  console.log(store.getGames);
+   store.loadGames();
+   console.log(store.getGames);
 } );
 </script>
 
 <template>
-  <Nav />
+   <Nav />
 
-  <main>
-    <div class="album py-5 bg-body-tertiary">
+   <main>
+      <div class="album py-5 bg-body-tertiary">
       <RouterView />
-    </div>
-  </main>
+      </div>
+   </main>
 
-  <Footer />
+   <Footer />
 </template>
 
 <style scoped>
