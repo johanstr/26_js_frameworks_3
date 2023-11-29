@@ -106,8 +106,6 @@ export const useGamesStore = defineStore('gamesStore', () => {
    }
 
    return { 
-      games, 
-      cart, 
       getGames, 
       getCart, 
       countItemsInCart, 

@@ -7,7 +7,6 @@ import { useGamesStore } from '@/stores/games'
 import GameCard from './GameCard.vue'
 
 const store = useGamesStore();
-
 </script>
 
 <style scoped>

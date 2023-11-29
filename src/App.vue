@@ -9,7 +9,7 @@ const store = useGamesStore();
 
 onBeforeMount( () => {
    store.loadGames();
-   console.log(store.getGames);
+   console.log(store.getGames);  // Ter controle
 } );
 </script>
 
@@ -28,3 +28,5 @@ onBeforeMount( () => {
 <style scoped>
 
 </style>
+
+
